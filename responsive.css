@@ -140,6 +140,15 @@
         font-size: 22px;
     }
 
+    .service .service-list__items-effect {
+        position: initial;
+    }
+    
+    .service .service-list__items-effect::before,
+    .service-list__items-effect::after {
+        position: initial;
+    }
+
     .service .service-list__items-link {
         font-size: 15px;
     }
@@ -222,6 +231,12 @@
         width: calc(50% - 15px);
     }
 
+    .project .project-list__items:hover
+    .project-list__items-image {
+        transform: initial;
+        opacity: initial;
+    }
+
     .registration .registration__container {
         flex-direction: column;
     }
@@ -263,7 +278,24 @@
 
 /* RESPONSISVE MOBILE - GIAO DIỆN ĐIỆN THOẠI <<==== 740PX  */
 @media only screen and (max-width: 740px) {
-/* <<============ CLASS BASE ============>> */
+    /* <<============ CLASS BASE ============>> */
+    .btn {
+        padding: 10px 20px;
+    }
+
+    .btn span {
+        padding: 0;
+        letter-spacing: 1px;
+        font-size: 12px;
+        transform: initial;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .btn:before, .btn:after, .btn em {
+        position: inherit;
+    }
+
     .experience .experience__large {
         font-size: 40px;
     }
@@ -359,6 +391,10 @@
         padding-bottom: 15px;
     }
 
+    .company {
+        background-attachment: initial;
+    }
+
     .company .company-right {
         padding: 50px 15px 0;
     }
@@ -381,6 +417,10 @@
         margin-bottom: 40px;
     }
 
+    .articles {
+        background-attachment: scroll;
+    }
+
     .section .section__container {
         flex-wrap: wrap;
     }
@@ -396,7 +436,31 @@
     }
 
     .project .project-list__items {
+        width: calc(50% - 7.5px)
+    }
+
+    .project .project-list__items-image {
+        filter: initial;
+    }
+
+    .project .project-content {
+        position: initial;
+        margin-top: 10px;
         width: 100%;
+    }
+    
+    .project .project-content__link {
+        color: var(--color-black);
+        -webkit-line-clamp: 1;
+    }
+
+    .project .project-content__contact {
+        color: var(--color-black);
+        font-weight: 500;
+    }
+
+    .project .btn {
+        display: none;
     }
 
     .registration .registration-email {
@@ -422,6 +486,11 @@
 
     .registration .registration-email__form-btn {
         padding: 12px 24px;
+    }
+
+    .registration .registration-email__form-btn:hover {
+        background-color: var(--color-primary);
+        transition: initial;
     }
 
     .registration .registration-hotline {
