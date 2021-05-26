@@ -428,10 +428,11 @@ html {
     padding: 35px 0;
     margin: 0 15px;
     color: var(--color-black);
-    font-size: 15px;
+    font-size: 13.5px;
     font-weight: 700;
     display: block;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .header .header-list__items-link:hover {

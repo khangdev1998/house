@@ -1,5 +1,26 @@
-/* RESPONSISVE IPAD - GIAO DIỆN MÁY TÍNH BẢNG <<==== 1024PX  */
-@media only screen and (max-width: 1024px) {
+/* RESPONSISVE PC - GIAO DIỆN LAPTOP 1200PX <========> 1375PX  */
+@media only screen and (min-width: 1200px) and (max-width: 1375px) {
+/* <<============ CLASS BASE ============>> */
+   .container {
+       max-width: 1200px;
+   }
+
+   .Abdelzaher-slider {
+       height: 632px !important;
+   }
+
+   .mfp-iframe-holder .mfp-content {
+       max-width: 900px !important;
+   }
+/* <<============ CLASS BASE ============>> */
+
+   .banner {
+       height: 450px;
+   }
+}
+
+/* RESPONSISVE IPAD - GIAO DIỆN MÁY TÍNH BẢNG <<==== 1040PX  */
+@media only screen and (max-width: 1040px) {
 /* <<============ CLASS BASE ============>> */
     .btn {
         padding: 12px 2px;
@@ -15,7 +36,7 @@
     }
 
     .header .header-list__items-link {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .header .header-group {
@@ -278,7 +299,7 @@
 
 /* RESPONSISVE MOBILE - GIAO DIỆN ĐIỆN THOẠI <<==== 740PX  */
 @media only screen and (max-width: 740px) {
-    /* <<============ CLASS BASE ============>> */
+/* <<============ CLASS BASE ============>> */
     .btn {
         padding: 10px 20px;
     }
@@ -287,9 +308,11 @@
         padding: 0;
         letter-spacing: 1px;
         font-size: 12px;
-        transform: initial;
         font-weight: 500;
         text-transform: uppercase;
+        transform: initial;
+        transform-origin: initial;
+        position: initial;
     }
 
     .btn:before, .btn:after, .btn em {
