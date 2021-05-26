@@ -14,6 +14,10 @@
    }
 /* <<============ CLASS BASE ============>> */
 
+    .intro .intro-left__title {
+        font-size: 30px;
+    }
+
    .banner {
        height: 450px;
    }
@@ -315,7 +319,20 @@
         position: initial;
     }
 
-    .btn:before, .btn:after, .btn em {
+    .btn em {
+        position: initial;
+        transform-origin: initial;
+        -webkit-transform: initial;
+        width: 0;
+        height: 0;
+        right: 0;
+        top: 0;
+        z-index: initial;
+        transition: initial;
+        background: transparent;
+    }
+
+    .btn:before, .btn:after {
         position: inherit;
     }
 
