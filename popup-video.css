@@ -1,0 +1,28 @@
+.popup-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup-video {
+  position: relative;
+  border: 6px solid white;
+  max-width: 90%;
+  width: 1000px;
+}
+.popup-video iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
+@media screen and (max-width: 1439px) {
+  .popup-video {
+    width: 800px;
+  }
+}
