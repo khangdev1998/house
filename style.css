@@ -727,9 +727,9 @@ html {
 
 /* <<============ NEW CLASS ============>> */
 .company {
+  background-attachment: unset;
   background-image: url("images/company.png");
   background-size: cover;
-  background-attachment: unset;
   background-position: center;
   background-repeat: no-repeat;
   padding: 90px 0;
