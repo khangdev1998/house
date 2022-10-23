@@ -727,7 +727,7 @@ html {
 
 /* <<============ NEW CLASS ============>> */
 .company {
-  background-attachment: unset;
+  background-attachment: fixed;
   background-image: url("images/company.png");
   background-size: cover;
   background-position: center;
@@ -736,12 +736,13 @@ html {
   position: relative;
   z-index: 400;
 }
-@supports (background-attachment: fixed) {
+@media only screen and (max-width:768px) {
+    /* khắc phục background fixed lỗi trên mobile
+    https://stackoverflow.com/questions/26372127/background-fixed-no-repeat-not-working-on-mobile */
   .company {
-    background-attachment: fixed;
+    background-size: 100% 100vh;
   }
 }
-
 .company::before {
   content: "";
   width: 100%;
