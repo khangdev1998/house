@@ -736,11 +736,10 @@ html {
   position: relative;
   z-index: 400;
 }
-@media only screen and (max-width:768px) {
-    /* khắc phục background fixed lỗi trên mobile
-    https://stackoverflow.com/questions/26372127/background-fixed-no-repeat-not-working-on-mobile */
+@media only screen and (max-width: 768px) {
+  /* khắc phục background fixed lỗi trên mobile */
   .company {
-    background-size: 100% 100vh;
+    background-attachment: unset;
   }
 }
 .company::before {
