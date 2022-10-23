@@ -736,12 +736,16 @@ html {
   position: relative;
   z-index: 400;
 }
-@media only screen and (max-width: 768px) {
-  /* khắc phục background fixed lỗi trên mobile */
+@supports not (background-attachment: fixed) {
   .company {
     background-attachment: unset;
   }
 }
+/* @media only screen and (max-width: 768px) {
+  .company {
+    background-attachment: unset;
+  }
+} */
 .company::before {
   content: "";
   width: 100%;
